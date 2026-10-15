@@ -1,0 +1,19 @@
+[project]
+name = "gnosis"
+version = "0.1.0"
+description = "AI-assisted, rules-gated paper trading: the model writes theses, code decides trades."
+requires-python = ">=3.10"
+dependencies = [
+    "anthropic>=1.14",
+    "alpaca-py>=0.30",
+    "pydantic>=2",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8"]
+
+[tool.setuptools]
+packages = ["gnosis"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
