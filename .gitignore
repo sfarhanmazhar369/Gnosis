@@ -7,3 +7,6 @@ journal.jsonl
 pending.jsonl
 research/
 KILL
+
+# Claude Code per-user settings (may contain "Don't ask again" allow rules with secrets)
+.claude/settings.local.json
